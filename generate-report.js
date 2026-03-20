@@ -6,7 +6,8 @@ const options = {
     output: 'cucumber_report.html',
     reportSuiteAsScenarios: true,
     scenarioTimestamp: true,
-    launchReport: true,
+    // In CI we don't want to open a browser/tab automatically.
+    launchReport: false,
     metadata: {}
 };
 
